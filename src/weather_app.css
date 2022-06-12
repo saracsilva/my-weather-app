@@ -100,3 +100,10 @@ h2 {
 .strong {
   font-weight: 700;
 }
+
+.openSource {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-left: -750px;
+}
