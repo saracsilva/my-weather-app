@@ -19,10 +19,11 @@
     <div class="container">
       <div class="card">
         <head>
+            <form class="search-form" id="search-form">
           <div class="input-group mb-3 searchCity" >
               
             <input
-              type="text"
+              type="search"
               class="form-control"
               placeholder="City Search"
               aria-label="Recipient's username"
@@ -40,6 +41,7 @@
             </button>
           
           </div>
+        </form>
           <div class="row headTop">
             <div class="col-6">
               <h1>25º</h1>
@@ -48,7 +50,7 @@
               <div class="dateMonth"> April, 4</div>
             </div>
             <div class="col-6">
-              <p class="daysOfweekstate">
+              <p class="daysOfweekstate" id="description">
                 Sun and <br />
                 cloudy
               </p>
@@ -431,15 +433,10 @@
               </svg>
               </div>
             </div>
-            
           </div>
-           <p class="openSource"> <a href="https://github.com/saracsilva/my-weather-app" target="_blank"> Open-source code</a> by Sara Silva</p>
         </footer>
-        
       </div>
-      
     </div>
-   
-    <script src="src/index.js"></script>
+    <source src="src/index.js" type="">
   </body>
 </html>
