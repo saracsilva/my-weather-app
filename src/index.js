@@ -97,7 +97,7 @@ function temperatureConversionC(event) {
 
 function temperatureConversionF(event) {
   let h1 = document.querySelector("h1");
-  h1.innerHTML = "45º";
+  h1.innerHTML = "65º";
 }
 
 let temperatureC = document.querySelector("#celcius");
