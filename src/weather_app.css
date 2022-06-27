@@ -6,12 +6,17 @@
   padding: 0;
 }
 .container {
+  margin-top: 100px;
   max-width: 1000px;
 }
 .card {
   background-color: rgba(127, 169, 155, 0.3);
+  padding: 50px 20px 0px 20px;
 
   font-family: "Raleway", sans-serif;
+}
+.city {
+  margin-top: -50px;
 }
 
 .searchCity {
@@ -37,7 +42,6 @@ h2,
 h1 {
   font-weight: 600;
   font-size: 150px;
-  margin-bottom: -20px;
 }
 h2 {
   font-family: "Roboto", sans-serif;
@@ -45,6 +49,27 @@ h2 {
   font-size: 80px;
   margin-bottom: -15px;
 }
+.units {
+  position: relative;
+  left: -100px;
+  top: -150px;
+  text-decoration: none;
+  color: #394a51;
+}
+.unitsLink {
+  text-decoration: none;
+  color: #394a51;
+  font-weight: 500;
+}
+.active {
+  cursor: default;
+  color: #394a51;
+  font-weight: 700;
+}
+.unitsLink:hover {
+  color: #394a51;
+}
+
 .headTop {
   margin: 20px;
 }
@@ -70,11 +95,19 @@ h2 {
   top: 39px;
   right: -350px;
 }
-.weatherSvg {
-  width: 30%;
+.weatherIcon {
+  width: 50%;
   display: block;
   margin: 0 auto;
-  margin-bottom: 80px;
+}
+#descriptionDay {
+  text-transform: capitalize;
+}
+#humidity,
+#wind {
+  top: -250px;
+  font-weight: 600;
+  font-size: 28px;
 }
 
 #sun {
@@ -87,8 +120,7 @@ h2 {
   text-align: center;
   font-size: 30px;
   font-weight: 200;
-  margin: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
   color: #394a51;
 }
 .weekDay02 {
@@ -99,11 +131,4 @@ h2 {
 }
 .strong {
   font-weight: 700;
-}
-
-.openSource {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  margin-left: -750px;
 }
