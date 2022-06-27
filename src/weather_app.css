@@ -7,11 +7,12 @@
 }
 .container {
   margin-top: 100px;
-  max-width: 1000px;
+  margin-bottom: 100px;
+  max-width: 1100px;
 }
 .card {
   background-color: rgba(127, 169, 155, 0.3);
-  padding: 50px 20px 0px 20px;
+  padding: 50px 20px 20px 20px;
 
   font-family: "Raleway", sans-serif;
 }
@@ -95,10 +96,19 @@ h2 {
   top: 39px;
   right: -350px;
 }
+.headTop {
+  margin-bottom: -100px;
+}
 .weatherIcon {
   width: 50%;
   display: block;
   margin: 0 auto;
+  filter: drop-shadow(-5px -15px 10px rgba(255, 255, 255, 0.3))
+    drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.02))
+    drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.02));
+}
+.weatherIcon:hover {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
 }
 #descriptionDay {
   text-transform: capitalize;
@@ -108,12 +118,6 @@ h2 {
   top: -250px;
   font-weight: 600;
   font-size: 28px;
-}
-
-#sun {
-  filter: drop-shadow(-5px -15px 10px rgba(255, 255, 255, 0.8))
-    drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2))
-    drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.2));
 }
 
 .daysOfweek {
@@ -131,4 +135,22 @@ h2 {
 }
 .strong {
   font-weight: 700;
+}
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+.codeBy {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+}
+.codeBy a {
+  color: #394a51;
 }

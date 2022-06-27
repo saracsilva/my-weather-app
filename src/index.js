@@ -23,9 +23,7 @@ function displayForecast(response) {
                forecastDay.temp.max
              )}º </span>|  ${Math.round(forecastDay.temp.min)}º <br>
               <img
-          src="http://openweathermap.org/img/wn/${
-            forecastDay.weather[0].icon
-          }@2x.png"
+          src="src/img/${forecastDay.weather[0].icon}.png"
           alt=""
           width="42"
         /></div>
@@ -105,7 +103,7 @@ function showTemperature(response) {
   let iconElement = document.querySelector("#iconCurrentDay");
   iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `src/img/${response.data.weather[0].icon}.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
